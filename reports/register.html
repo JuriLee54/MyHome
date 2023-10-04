@@ -9,52 +9,52 @@
 <div> * 필수 입력 항목 </div>
 <form name="usr_info" method="post">
     <p> 기본 정보 </p>
-    <label for="u_name"> 이름* </label>
-        <input type="text" id="u_name" name="u_name" size="8"><br>
-    <label for="u_email"> 이메일* </label>
-        <input type="email" id="u_email" name="u_email" size="15" placeholder="id@domain_name"><br>
-    <label for="u_password"> 암호* </label>
-        <input type="password" id="u_password" name="u_password" size="12"><br>
-    <label for="u_check"> 암호 확인* </label>
-        <input type="password" id="u_check" name="u_check" size="12"><br>
-    <label> 모바일 폰*
-        <input type="tel" id="u_tel" name="u_tel" size="13" placeholder="010-0000-0000">
-    </label><br>
-    <lable for="u_home"> 개인 홈페이지 </lable>
-        <input type="url" id="u_home" name="u_home" size="30" placeholder="http://"><br>
-    <label for="u_address"> 주소*</label>
-        <input type="text" id="u_address" name="u_address" size="30">
+        <label for="u_name"> 이름* </label>
+            <input type="text" id="u_name" name="u_name" size="8"><br>
+        <label for="u_email"> 이메일* </label>
+            <input type="email" id="u_email" name="u_email" size="15" placeholder="id@domain_name"><br>
+        <label for="u_password"> 암호* </label>
+            <input type="password" id="u_password" name="u_password" size="12"><br>
+        <label for="u_check"> 암호 확인* </label>
+            <input type="password" id="u_check" name="u_check" size="12"><br>
+        <label> 모바일 폰*
+            <input type="tel" id="u_tel" name="u_tel" size="13" placeholder="010-0000-0000">
+        </label><br>
+        <lable for="u_home"> 개인 홈페이지 </lable>
+            <input type="url" id="u_home" name="u_home" size="30" placeholder="http://"><br>
+        <label for="u_address"> 주소*</label>
+            <input type="text" id="u_address" name="u_address" size="30">
 
     <p> 학 력 </p>
-    <label for="u_school"> 학교 명* </label>
-        <input type="text" id="u_school" name="u_school" size="12"><br>
-    <label for="u_major"> 전 공* </label>
-        <input type="text" id="u_major" name="u_major" size="12"><br>
-    <label> 졸업 여부*
-        <select name="u_gradt" id="u_gradt">
-            <option value="0">---선택---</option>
-            <option value="1">졸업예정</option>
-            <option value="2">졸업</option>
-        </select></label><br>
-    <label for="u_date"> 졸업(예정)일 </label>
-        <input type="date" id="u_date" name="u_date">
+        <label for="u_school"> 학교 명* </label>
+            <input type="text" id="u_school" name="u_school" size="12"><br>
+        <label for="u_major"> 전 공* </label>
+            <input type="text" id="u_major" name="u_major" size="12"><br>
+        <label> 졸업 여부*
+            <select name="u_gradt" id="u_gradt">
+                <option value="0">---선택---</option>
+                <option value="1">졸업예정</option>
+                <option value="2">졸업</option>
+            </select></label><br>
+        <label for="u_date"> 졸업(예정)일 </label>
+            <input type="date" id="u_date" name="u_date">
 
     <p> 업무 경력 </p>
-    <label for="u_company"> 근무업체명 </label>
-        <input type="text" id="u_company" name="u_company" size="20"><br>
-    <label for="u_position"> 직 위 </label>
-        <input type="text" id="u_position" name="u_position" size="10"><br>
-    <label> 담당 업무
-        <textarea name="u_text"  id="u_text" cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.
-        </textarea>
-    </label><br>
-    <label> 근무년수
-        <input type="number" min="0" max="10" step="0.5">년</label>
+        <label for="u_company"> 근무업체명 </label>
+            <input type="text" id="u_company" name="u_company" size="20"><br>
+        <label for="u_position"> 직 위 </label>
+            <input type="text" id="u_position" name="u_position" size="10"><br>
+        <label> 담당 업무
+            <textarea name="u_text"  id="u_text" cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.
+            </textarea>
+        </label><br>
+        <label> 근무년수
+            <input type="number" min="0" max="10" step="0.5">년</label>
 
     <p> 자기소개서 </p>
-    <label> 첨부 파일
-        <input type="file" name="u_file" id="u_file">
-    </label>
+        <label> 첨부 파일
+            <input type="file" name="u_file" id="u_file">
+        </label>
 
     <p id="bttn">
         <button type="submit">제출</button>
