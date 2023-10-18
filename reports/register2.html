@@ -3,6 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>회원가입</title>
+    <style>
+        #esn {
+            color: red;
+            font-size: 10pt; }
+
+        .tit {
+            font-weight: bold;
+            background-color: lightblue;
+            width: 800px;
+            padding-left: 10px; }
+
+        div > label {
+            margin-left: 8px;
+            text-align: right;
+            width: 130px;
+            padding-right: 8px;
+            display: inline-block; }
+
+        .star {
+            color: red; }
+
+        #finish {
+            margin-left: 200px; }
+
+    </style>
 </head>
 <body>
 <h2> 취업 정보 계정 만들기</h2>
@@ -10,15 +35,15 @@
 <form name="usr_info" method="post">
     <p class="tit"> 기본 정보 </p>
     <div>
-        <label for="u_name"> 이름*</label>
+        <label for="u_name"> 이름<span class="star">*</span></label>
             <input type="text" id="u_name" name="u_name" size="8"><br>
-        <label for="u_email"> 이메일*</label>
+        <label for="u_email"> 이메일<span class="star">*</span></label>
             <input type="email" id="u_email" name="u_email" size="15" placeholder="id@domain_name"><br>
-        <label for="u_password"> 암호*</label>
+        <label for="u_password"> 암호<span class="star">*</span></label>
             <input type="password" id="u_password" name="u_password" size="12"><br>
-        <label for="u_check"> 암호 확인*</label>
+        <label for="u_check"> 암호 확인<span class="star">*</span></label>
             <input type="password" id="u_check" name="u_check" size="12"><br>
-        <label for="u_tel"> 모바일 폰*</label>
+        <label for="u_tel"> 모바일 폰<span class="star">*</span></label>
             <input type="tel" id="u_tel" name="u_tel" size="13" placeholder="010-0000-0000"><br>
         <label for="u_home"> 개인 홈페이지 </label>
             <input type="url" id="u_home" name="u_home" size="30" placeholder="http://"><br>
@@ -28,11 +53,11 @@
 
     <p class="tit"> 학 력 </p>
     <div>
-        <label for="u_school"> 학교 명*</label>
+        <label for="u_school"> 학교 명<span class="star">*</span></label>
             <input type="text" id="u_school" name="u_school" size="12"><br>
-        <label for="u_major"> 전 공*</label>
+        <label for="u_major"> 전 공<span class="star">*</span></label>
             <input type="text" id="u_major" name="u_major" size="12"><br>
-        <label for="u_gradt"> 졸업 여부*</label>
+        <label for="u_gradt"> 졸업 여부<span class="star">*</span></label>
             <select name="u_gradt" id="u_gradt">
                 <option value="0">---선택---</option>
                 <option value="1">졸업예정</option>
