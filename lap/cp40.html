@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표 꾸미기</title>
+    <style>
+      table { border-collapse: collapse; }
+      caption { font-size: large;
+              font-weight: bold;
+              margin: 10px; }
+      th { width: 100px;
+          padding: 6px ;
+          border-top: 2px solid black;
+          border-bottom: 2px solid black;
+          background-color: lightgray; }
+      td { text-align: center;
+          padding:5px;
+          border-bottom: 1px solid black; }
+      tr:last-child {
+          border-bottom: 2px solid black;}
+      tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
+          background-color: lightcyan; }
+      tbody tr:hover {
+          background-color: pink; }
+
+    </style>
+</head>
+<body>
+<table>
+    <caption> 1900년 ~ 1903년 개체 수 변화 추이</caption>
+    <thead>
+        <tr> <th>년도</th><th>토끼</th><th>시라소니</th><th>당근</th></tr>
+    </thead>
+    <tbody>
+        <tr> <td>1900</td><td>30,000</td><td>4,000</td><td>48,300</td></tr>
+        <tr> <td>1901</td><td>47,200</td><td>6,100</td><td>48,200</td></tr>
+        <tr> <td>1902</td><td>70,200</td><td>9,800</td><td>41,500</td></tr>
+        <tr> <td>1903</td><td>77,400</td><td>35,200</td><td>38,200</td></tr>
+    </tbody>
+    <tfoot>
+        <tr> <td>합계</td><td>224,800</td><td>55,100</td><td>176,200</td></tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

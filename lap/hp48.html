@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트 입력 폼</title>
+</head>
+<body>
+<h3>자기소개서</h3>
+<hr>
+<form name ="resume" method="post">
+    <div id ="txt_input">
+        <label for = "student_name">이름</label>
+        <input type="text" id ="student_name" name="name"> <br>
+        <label>이메일<input type="email" name="email"> </label><br>
+        <label>암호<input type="password" name="pwd">(수정용 암호)</label>
+    </div>
+    <div id="slt_input">
+        <p>보유 IT기술:
+        <label><input type="checkbox" value="p">Python</label>
+        <label><input type="checkbox" value="c">C/C++</label>
+        <label><input type="checkbox" value="frnt_web">Front-End Web Technology</label></p>
+        <p>성별:
+        <input type="radio" name="gender" id="male" value="m" >
+        <label for="male">남성</label>
+        <label><input type="radio" name="gender" value="f">여성</label></p>
+    </div>
+    <div id="comment">
+        <label>남기고 싶은 말: <br>
+            <textarea rows="10" cols="70"></textarea></label>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자 정보 입력</title>
+</head>
+<body>
+<h3>사용자 정보 입력</h3>
+<hr>
+<form name="usr_info" method="post" action="{% url 'createform' %}">
+  <label>이름 <input type="text" name="name" id="name" size="6"></label> <br>
+  <label for="email">이메일 </label>
+  <input type="email" name="email" id="email" placeholder="someone@domainname"><br>
+  <label for="phone">연락처 </label>
+  <input type="tel" name="phone" id="phone" placeholder="- 없이 번호만 입력"><br>
+  <label>홈페이지 <input type="url" name="homepg" id="homepg" placeholder="http://"></label><br>
+  <label for="pwd">수정 암호</label>
+  <input type="password" name="pwd" id="pwd" size="15">(정보수정시 사용) <br>
+  <textarea id ="comment" name="nomments" cols="40" rows="10">여기에 메세지를 남기세요</textarea><br>
+  <input type="submit" value="완 료">
+</form>
+</body>
+</html>

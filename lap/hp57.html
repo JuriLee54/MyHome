@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼 만들기</title>
+</head>
+<body>
+<h3>다양한 기능의 버튼</h3>
+<form name="srch">
+    <p>
+        <label>검색어:
+        <input type="search" name="srch_sord" id="s_word" placeholder="검색어 입력"></label>
+    </p>
+    <p>
+        <input type="reset" value="초기화">
+        <input type="submit" value="검색">
+        <input type="button" value="구글">
+    </p>
+    <p>
+        <button type="reset"><img src="images/reset.png"></button>
+        <button type="submit"><img src="images/submit.jpg"></button>
+        <button type="button" onclick="window.open('http://google.com')"><img src="images/google.png"></button>
+    </p>
+    <p>
+        <button type="reset" style="border:none;"><img src="images/reset.png"></button>
+        <button type="submit" style="border:none;"><img src="images/submit.jpg"></button>
+        <button type="button" onclick="window.open('http://google.com')" style="border:none;">
+            <img src="images/google.png"></button>
+        <input type="image" src="images/submit.jpg">
+    </p>
+
+</form>
+</body>
+</html>

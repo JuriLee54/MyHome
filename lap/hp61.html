@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택형 항목 만들기</title>
+</head>
+<body>
+<h3>선택형 항목 만들기</h3>
+<hr>
+<form name="options" action="{% url 'choice' %}">
+    <p>디저트 :
+        <label><input type="radio" name="dissert" id ="d1" value="coffee"> 커피</label>
+        <input type="radio" name="dissert" id="d2" value="juice"><label for="d2">주스</label>
+        <label><input type="radio" name="dissert" id ="d3" value="icd_creaM"checked>아이스크림</label>
+    </p>
+    <p>보유 기술 :
+        <label><input type="checkbox" name="tech" id="t1" value="python">파이썬</label>
+        <input type="checkbox" name="tech" id="t2" value="C/C++"><label for="t2">C/C++</label>
+        <label><input type="checkbox" name="tech" id="t3" value="web" >Web programming</label>
+    </p>
+</form>
+
+</body>
+</html>
