@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>미디어 쿼리</title>
+    <style>
+        h3 { margin: 15px 10px; }
+        div { border: 2px solid black;
+                margin-bottom: 15px;
+                color: white;
+                text-align: center; }
+        #d1 { background-color: blue;
+                width: 300px;
+                height: 300px; }
+        #d2 { background-color: #0f5132;
+                width: 150px;
+                height: 150px; }
+        @media (min-width: 601px) {
+            #d1 {
+                width: 400px;
+                background-color: darkred;
+            }
+            #d2 {
+                background-color: #146c43;
+                width: 200px;
+            }
+        }
+        @media (min-width:992px) {
+            #d1 {
+                width: 600px;
+                background-color: #2c0b0e;
+            }
+            #d2 {
+                width: 400px;
+                background-color: #332701;
+            }
+        }
+</style>
+</head>
+<body>
+<h3> 미디어 쿼리 </h3>
+<div id="d1">블록 1</div>
+<div id="d2">블록 2</div>
+
+</body>
+</html>

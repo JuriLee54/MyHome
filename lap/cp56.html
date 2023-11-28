@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float 속성을 이용한 배치</title>
+    <style>
+    .title { text-align: center;
+            font-size: 1.2em; }
+    div#page { border: 1px solid black;
+            overflow: auto; }
+    header { background-color: lightgray;
+            border: 1px solid blue; }
+    nav { width: 150px;
+            float:left;
+            background-color: black;
+            color: white;
+            height: 300px;
+            border: 1px solid white; }
+    section { margin-left: 150px;
+            height: 300px;
+            border: 1px solid green; }
+    footer { clear: both;
+            background-color: lightgray;
+            border: 1px solid red; }
+    </style>
+</head>
+<body>
+<h3 style="text-align: center;"> 화면 레이아웃 </h3>
+<div id="page">
+    <header>
+        <p class="title">헤더 영역</p> </header>
+    <nav>
+        <p class="title">nav 영역</p>
+        <p>메뉴 위치</p> </nav>
+    <section>
+        <p class="title">section 영역</p>
+        <p>이 영역은 페이지의 컨텐츠가 위치합니다.</p>
+    </section>
+    <footer>
+        <p class="title">footer 영역</p> </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport" content="width=device-width, initial-scale=1">
+    <title>반응형 웹 페이지</title>
+    <style>
+        p { border: 1px solid black;
+            background-color: #5F9EA0;
+            width: 90%; height: 150px;
+            margin-left: auto; margin-right: auto;
+            font-family: Helvet; color: white ; }
+        /*** base styles ***/
+        * { box-sizing: border-box; }
+        /*** simple responsive framework ***/
+        .row { width: 100%; }
+        /*** large device only ***/
+        @media (min-width: 1200px) {
+            .lg_4 {
+                float: left;
+                border: 1px solid green; }
+            .lg_4 { width: 25%; }
+        }
+        /*** medium device only ***/
+        @media (min-width: 950px) and (max-width: 1199px){
+            .md_2 {
+                float: left;
+                border: 1px solid green; }
+            .md_2 { width: 50%; }
+        }
+</style>
+</head>
+<body>
+<h3>반응형 웹 레이아웃</h3>
+<div class="row">
+<div class="lg_4 md_2"><p>블록 영역 1</p></div>
+<div class="lg_4 md_2"><p>블록 영역 2</p></div>
+<div class="lg_4 md_2"><p>블록 영역 3</p></div>
+<div class="lg_4 md_2"><p>블록 영역 4</p></div>
+<div class="lg_4 md_2"><p>블록 영역 5</p></div>
+<div class="lg_4 md_2"><p>블록 영역 6</p></div>
+<div class="lg_4 md_2"><p>블록 영역 7</p></div>
+<div class="lg_4 md_2"><p>블록 영역 8</p></div>
+</div>
+</body>
+</html>
