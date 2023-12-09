@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if조건문 예제</title>
+</head>
+<body>
+<script>
+var x ;
+document.write(x) ;
+if (x==undefined) {
+    document.write("<br>변수 x의 값이 정의되지 않음.")
+}
+x = 5 ;
+if (x == undefined) {
+    document.write("<br>변수 x의 값이 정의되지 않음.")
+} else {
+    document.write("<br>변수 x의 값이 정의됨.")
+}
+</script>
+<script>
+var x=4, y=4 ;
+if (x==y) {
+    document.write("x=4 is equal to y=4");
+}
+// equality operator == : 강제 형변환후 비교
+x="4"
+if (x==y) {
+    document.write("<br>x='4' is equal to y=4");
+}
+// strict equality operator === : 강제 형변환을 하지 않고 비교
+if (x===y) {
+    document.write("<br>x='4' is equal to y=4");
+} else {
+    document.write("<br>x='4' is NOT equal to y=4");
+}
+</script>
+</body>
+</html>

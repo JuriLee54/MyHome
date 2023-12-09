@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>객체 속성 엑세스</title>
+</head>
+<body>
+<script>
+  var my_car = new Object() ;
+  my_car.make = "Hyundai" ;
+  my_car.model = "Grandeur" ;
+  my_car["purchase price"] = 3800 ;
+  for (var prop in my_car) {
+    document.write("<br>" + prop + ": " + my_car[prop]) ;
+    console.log(prop + ": " + my_car[prop]) ;
+  }
+</script>
+</body>
+</html>

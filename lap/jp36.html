@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scope of variables2</title>
+    <script>
+        var message = "in global" ;
+        document.write("<br>global: message = " + message) ;
+        var a = function () {
+            var message = "inside function a" ;
+            document.write("<br>function a: message = " + message) ;
+            function b() {
+                document.write("<br>function b: message = " + message) ;
+            }
+        b() ;
+        }
+    </script>
+</head>
+<body>
+<script>
+    a();
+</script>
+</body>
+</html>

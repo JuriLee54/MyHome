@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array 메쏘드</title>
+</head>
+<body>
+<h3>Array 메쏘드</h3> <hr>
+<script>
+  var a = ["황", "김", "이"];
+  var b = ["박"];
+  var c;
+  document.write("<br>Array a:" + a + ", Array b:" + b);
+  c = a.concat(b); // c는 a와 b를 연결한 새 배열
+  document.write("<br>Array a와 b의 결합: " + c) ;
+  a.reverse();
+  document.write("<br>Array a의 역순 재배치:" + a) ;
+  c = a.slice(1, 2); // c는 새 배열
+  document.write("<br>Array a의 부분 배열: " + c) ;
+  a.sort();
+  document.write("<br>Array a의 정렬:" + a) ;
+  </script>
+</body>
+</html>

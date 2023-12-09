@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>함수와 객체</title>
+</head>
+<body>
+<script>
+  function multiply(x, y) {
+    return x*y ;
+  }
+  // function factory
+  function make_multiplier(multiplier) {
+    var my_fn = function (x) {
+      return multiplier*x ;
+    }
+    return my_fn ;
+  }
+  var multiply_by_3 = make_multiplier(3);
+  document.write("<br>3*10 = " + multiply_by_3(10)) ;
+  console.log("3 * 10 = " + multiply_by_3(10)) ;
+
+    var double_all = make_multiplier(2) ;
+  document.write("<br>2*100 = " + double_all(100)) ;
+  console.log("2 * 100 = " + double_all(100)) ;
+</script>
+</body>
+</html>

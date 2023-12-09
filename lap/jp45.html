@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>객체 리터럴을 사용한 객체 생성</title>
+    <script>
+        var company = {
+            name: "Microsoft",
+            ceo: {
+            name: "Bill Gates",
+            fav_color: "blue"
+            },
+            "stock of company": 110
+        } ;
+        document.write('회사: ' + company) ;
+        document.write('<br>회사 이름:  '+ company.name) ;
+        document.write('<br>회사 ceo: ' + company.ceo);
+        document.write('<br>회사 ceo 이름: ' + company.ceo.name) ;
+        document.write('<br>회사 ceo 선호색: ' + company.ceo.fav_color) ;
+        document.write('<br>주가 : ' + company["stock of company"]) ;
+        console.log(company) ;
+        console.log(company.name) ;
+        console.log(company.ceo);
+        console.log(company.ceo.name) ;
+        console.log(company.ceo.fav_color) ;
+        console.log(company["stock of company"]) ;
+    </script>
+</head>
+<body>
+
+</body>
+</html>

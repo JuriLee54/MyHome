@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab</title>
+    <script>
+    document.addEventListener("DOMContentLoaded",
+    function (event) {
+        function say_hello(event) {
+                this.textContent = "Said" ;
+                console.log(event);
+                var name = document.getElementById("name").value;
+                var message = "<h2>Hello " + name + "!</h2>";
+                document.getElementById("content").innerHTML = message;
+                if (name === "student") {
+                    var title = document.querySelector("#title").textContent ;
+                    title += "& Loving it!";
+                    document.querySelector("#title").textContent = title;
+            }
+        }
+        document.querySelector("button").addEventListener("click", say_hello);
+        document.querySelector("button").onclick = say_hello;
+    }) ;
+    </script>
+</head>
+<body>
+    <h1 id="title">DOM 객체 액세스 - say hello</h1>
+    <p>
+        Say hello to
+        <input type="text" id="name">
+        <button>Say</button>
+    </p>
+    <div id="content"></div>
+</body>
+</html>
