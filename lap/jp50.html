@@ -6,20 +6,20 @@
 </head>
 <body>
 <script>
-  var literal_circle = { // same as new Object()
-    radius: 10,
-    get_area: function () {
-      var self = this ;
-      console.log(this) ;
-      document.write("<br>변경 전 반지름: " + this.radius) ;
-      var increase_radius = function () {
-        self.radius = 20 ;
-      };
-      increase_radius() ;
-      document.write("<br>변경 후 반지름: " + this.radius)
-      return Math.PI * Math.pow(this.radius, 2) ;
-    }
-  } ;
+    var literal_circle = { // same as new Object()
+        radius: 10,
+        get_area: function () {
+          var self = this ;
+          console.log(this) ;
+          document.write("<br>변경 전 반지름: " + radius) ;
+          var increase_radius = function () {
+            self.radius = 20 ;
+          };
+          increase_radius() ;
+          document.write("<br>변경 후 반지름: " + radius)
+          return Math.PI * Math.pow(this.radius, 2) ;
+        }
+      } ;
   document.write("<br>원 면적: " + literal_circle.get_area()) ;
 </script>
 </body>

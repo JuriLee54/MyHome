@@ -1,0 +1,25 @@
+#card {
+    width: 400px;
+}
+
+#cardimg {
+    width:100%;
+}
+
+#home {
+    font-weight: bold;
+}
+
+#head{
+    height:400px;
+}
+
+.interest{
+    width:350px;
+    height: 250px;
+}
+
+
+.favorites{
+    width:100%;
+}

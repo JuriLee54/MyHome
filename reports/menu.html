@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>@import "../css/my_css.css";</style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
-            <div class="container-fluid px-4 px-lg-5">
-                <a class="navbar-brand" href="#page_top">Start MyHome</image></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                        <li class="nav-item dropdown"><a class="nav-link" data-bs-toggle="dropdown" href="#projects">Portfolios</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href=" ">실습</a></li>
-                            <li><a class="dropdown-item" href=" ">과제</a></li>
-                        </ul></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Q&A</a></li>
-                    </ul>
-                </div>
+<nav class="navbar navbar-expand-sm  navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#page_top">My Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my_navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div id="my_navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about_me">About Me</a> </li>
+                    <li class="nav-item"><a class="nav-link" hre="">My Favorites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">My Interests</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="">My Works</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/ports/homework/index.html">과 제</a></li>
+                        <li><a class="dropdown-item" href="/ports/lab/index.html">실 습</a></li>
+                    </ul> </li>
+                    <li class="nav-item"><a class="nav-link" href="/favorites/index.html">Contact Me</a></li>
+                </ul>
             </div>
-        </nav>
+    </div>
+</nav>
 </body>
 </html>

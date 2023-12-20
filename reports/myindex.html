@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juri's Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style> @import "../css/my_css.css"; </style>
+</head>
+<body>
+<div data-include-path="menu.html"></div>
+<script src="../js/get_tags.js"></script>
+
+<header class="text-bg-dark py-5" id="page_top">
+    <div class="container mt-5 px-5" id="head">
+        <div class="text-center pt-5">
+            <h1 class="display-5 mb-2" id="home">Welcome to Juri's Home</h1>
+            <p class="text-secondary mb-4">저에 웹사이트에 오신 것을 환영합니다. 저에 대해 더 알고 싶으시다면 버튼을 눌러주세요!</p>
+            <div class="mx-auto">
+                <a class="btn btn-outline-light" href="#about_me">Learn More</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="container mt-5" id ="about_me">
+    <h2 class="mb-3 pt-5">About me</h2>
+    <div class="card mx-auto" id="card">
+        <img class="card-img-top" src="../images/card.jpg" id="cardimg">
+        <div class="card-body">
+            <h4 class="card-title">Juri Lee</h4>
+            <p class="card-text mb-0 mt-3">2018년  양주고등학교 입학</p>
+            <p class="card-text mb-0">2021년  양주고등학교 졸업</p>
+            <p class="card-text">2021년~ 동덕여자대학교 정보통계학과 재학</p>
+            <a href="" class="btn btn-outline-primary">See profile</a>
+        </div>
+    </div>
+</section>
+<section class="container mt-5" id="my_favorites">
+    <h2>My Favorites</h2>
+    <div style="width: 300px;">
+        <div data-include-path="carousel_cat.html"></div>
+        <script src="../js/get_tags.js"></script>
+    </div>
+    <div style="width: 300px;">
+        <div data-include-path="carousel_trip.html"></div>
+        <script src="../js/get_tags2.js"></script>
+    </div>
+    <div style="width: 300px;">
+        <div data-include-path="carousel_sport.html"></div>
+        <script src="../js/get_tags.js"></script>
+    </div>
+</section>
+
+<div class="container row mx-auto">
+    <section class="mt-5">
+        <h2>My Interests</h2>
+        <div class="">
+            <div class="border">
+                <img src="../images/mind.jpg" class="interest">감정 분석
+            </div>
+            <div class="border">
+                <img src="../images/money.jpg" class="interest">금융 데이터 분석
+            </div>
+            <div class="border">
+                <img src="../images/data.jpg" class="interest">데이터 엔지니어링
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+</footer>
+
+</body>
+</html>
