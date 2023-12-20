@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Juri's Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <style> @import "my_css.css"; </style>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style> @import "../css/my_css.css"; </style>
 </head>
 <body>
-<div data-include-path="menu.html"></div>
-<script src="js/get_tags.js"></script>
+<div data-include-path="../reports/menu.html" id="my_nav"></div>
+<script src="../js/get_tags.js"></script>
 
 <header class="text-bg-dark py-5" id="page_top">
     <div class="container mt-5 px-5" id="head">
@@ -24,55 +24,166 @@
     </div>
 </header>
 
-
-<section class="container mt-5" id ="about_me">
-    <h2 class="mb-3 pt-5">About me</h2>
-    <div class="card mx-auto" id="card">
-        <img class="card-img-top" src="images/card.jpg" id="cardimg">
-        <div class="card-body">
-            <h4 class="card-title">Juri Lee</h4>
-            <p class="card-text mb-0 mt-3">2018년  양주고등학교 입학</p>
-            <p class="card-text mb-0">2021년  양주고등학교 졸업</p>
-            <p class="card-text">2021년~ 동덕여자대학교 정보통계학과 재학</p>
-            <a href="" class="btn btn-outline-primary">See profile</a>
-        </div>
-    </div>
-</section>
-<section class="container mt-5" id="my_favorites">
-    <h2>My Favorites</h2>
-    <div>
-        <div style="width: 300px;">
-        <div data-include-path="../reports/carousel_cat.html"></div>
-        <script src="js/get_tags.js"></script>
-        </div>
-    </div>
-
-    <div style="width: 300px;">
-        <div data-include-path="../reports/carousel_trip.html"></div>
-        <script src="js/get_tags2.js"></script>
-    </div>
-    <div style="width: 300px;">
-        <div data-include-path="../reports/carousel_sport.html"></div>
-        <script src="js/get_tags.js"></script>
-    </div>
-</section>
-
-<div class="container row mx-auto">
-    <section class="mt-5">
-        <h2>My Interests</h2>
-        <div class="">
-            <div class="border">
-                <img src="images/mind.jpg" class="interest">감정 분석
+<div class="container">
+    <div class="row">
+        <section class="mt-5 col-md-5  mx-auto" id ="about_me">
+            <h2 class="mb-3 pt-5">About me</h2>
+            <div class="card" id="card">
+                <img class="card-img-top" src="images/card.jpg" id="juri">
+                <div class="card-body">
+                    <h4 class="card-title">Juri Lee</h4>
+                    <p class="card-text mb-0 mt-3">2018년  양주고등학교 입학</p>
+                    <p class="card-text mb-0">2021년  양주고등학교 졸업</p>
+                    <p class="card-text">2021년~ 동덕여자대학교 정보통계학과 재학</p>
+                    <a href="" class="btn btn-outline-primary">See profile</a>
+                </div>
             </div>
-            <div class="border">
-                <img src="images/money.jpg" class="interest">금융 데이터 분석
+        </section>
+        <section class="mt-5 col-md-7 mx-auto mx-auto" id="my_interests">
+            <h2 class="mb-3 pt-5">My Interests</h2>
+            <div class="row">
+                <div class="col-lg-6 my-2 mx-auto">
+                    <img src="images/mind.jpg" class="interest rounded d-inline-block mt-auto">
+                    <div class="d-inline-block">
+                    <p class="inter_title mt-2">감정 분석</p>
+                    <div>소셜 미디어 게시물, 고객 서비스 전화 및 설문 조사와 같은 다양한 유형의 상호 작용에 참여하는 소비자가 표현하는 의견, 감정 또는 느낌을 포착하고 추적하는 것</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-2 mx-auto">
+                    <img src="images/money.jpg" class="interest rounded d-block mt-auto">
+                    <p class="inter_title mt-2">금융 데이터 분석</p>
+                    <div>특정 비즈니스의 금융 데이터에 대한 다양한 관점을 제공하여, 비즈니스의 전반적인 성과를 향상시키는 전략적 의사결정과 조치를 용이하게 할 수 있는 통찰력을 제공.</div>
+                </div>
+                <div class="col-lg-6 my-2 mx-auto">
+                    <img src="images/data.jpg" class="interest rounded d-block mt-auto">
+                    <p class="inter_title mt-2">데이터 엔지니어링</p>
+                    <div>원시 데이터를 가져와 분석 및 머신러닝과 같은 다운스트림 사용 사례를 지원하고, 고품질의 일관된 정보를 생성하는 시스템과 프로세스의 개발, 구현 및 유지 관리</div>
+                </div>
             </div>
-            <div class="border">
-                <img src="images/data.jpg" class="interest">데이터 엔지니어링
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </div>
+
+<hr class="d-md-none">
+<section class="container mt-5" id="my_favorites">
+    <h2 class="mb-3">My Favorites</h2>
+    <div class="row">
+        <div class="col-12 col-lg-4 col-md-6 mx-auto">
+            <div class="fa">
+                <div data-include-path="../reports/carousel_cat.html"></div>
+                <p class="my-3">고양이 털 알레르기가 있어 고양이와 오래 있진 못하지만 고양이를 보는 것을 좋아합니다.</p>
+            </div>
+            <p></p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 mx-auto">
+            <div class="fa">
+                <div data-include-path="../reports/carousel_trip.html"></div>
+                <p class="my-3">여행을 떠날 때의 설렘을 좋아해 자주 여행을 갑니다.</p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 mx-auto">
+            <div class="fa">
+                <div data-include-path="../reports/carousel_sport.html"></div>
+                <p class="my-3">스포츠 경기를 직접 보는 것을 좋아합니다. 기회가 있다면 계속 직접 보고 싶습니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div>
+        <h2>과제</h2>
+        <a href="../reports/index.html">인덱스 페이지</a>
+        <a href="../reports/register.html">과제1</a>
+        <a href="../reports/register2.html">과제2</a>
+        <a href="../reports/report03.html">과제3</a>
+        <a href="../reports/report04.html">과제4</a>
+    </div>
+
+    <div>
+        <h2>실습</h2>
+        <div>
+
+        </div>
+        <div>
+            <h4>css실습</h4>
+            <a href="../lap/cp05.html">스타일 시트 활용</a>
+            <a href="../lap/cp08.html">스타일 만들기</a>
+            <a href="../lap/cp22.html">선택자</a>
+            <a href="../lap/cp29.html">박스 모델 적용</a>
+            <a href="../lap/cp34.html">피자 메뉴</a>
+            <a href="../lap/cp38.html">메뉴 만들기</a>
+            <a href="../lap/cp40.html">표 꾸미기</a>
+            <a href="../lap/cp45.html">display 속성</a>
+            <a href="../lap/cp47.html">광야-이육사</a>
+            <a href="../lap/cp51.html">float 속성</a>
+            <a href="../lap/cp54.html">Two Column Design</a>
+            <a href="../lap/cp56.html">float 속성을 이용한 배치</a>
+            <a href="../lap/cp58.html">다중 열 레이아웃</a>
+            <a href="../lap/cp68.html">미디어 쿼리</a>
+            <a href="../lap/cp71.html">반응형 웹 페이지</a>
+        </div>
+        <div>
+            <h4>Bootstrap 실습</h4>
+            <a href="../lap/bp07.html">Bs5 컨테이너 예제1</a>
+            <a href="../lap/bp11.html">Bs5 컨테이너 예제2</a>
+            <a href="../lap/bp14.html">BS5 Typography</a>
+            <a href="../lap/bp17.html">BS5 Color</a>
+            <a href="../lap/bp19.html">BS5 table</a>
+            <a href="../lap/bp23.html">BS5 Button</a>
+            <a href="../lap/bp27.html">BS5 Cards</a>
+            <a href="../lap/bp30.html">BS5 Dropdown</a>
+            <a href="../lap/bp34.html">BS5 navbar</a>
+            <a href="../lap/bp36.html">BS5 navbar 적용</a>
+            <a href="../lap/bp39.html">BS5 Carousel</a>
+            <a href="../lap/bp41.html">BS5 carousel 적용</a>
+            <a href="../lap/bp44.html">Bs5 Tooltip Example</a>
+            <a href="../lap/bp46.html">BS5 Flex</a>
+            <a href="../lap/bp48.html">BS5 form</a>
+            <a href="../lap/bp50.html">BS5 form validated</a>
+            <a href="../lap/bp52.html">Bs5 Website Example</a>
+        </div>
+        <div>
+            <h2>JavaScript 실습</h2>
+            <a href="../lap/jp11.html">지역변수와 전역변수</a>
+            <a href="../lap/jp19.html">if-else</a>
+            <a href="../lap/jp20.html">if조건문 예제</a>
+            <a href="../lap/jp25.html">switch</a>
+            <a href="../lap/jp27.html">for문</a>
+            <a href="../lap/jp28.html">while 문</a>
+            <a href="../lap/jp29.html">do-while문</a>
+            <a href="../lap/jp31.html">break 문</a>
+            <a href="../lap/jp32.html">continue 문</a>
+            <a href="../lap/jp34.html">함수</a>
+            <a href="../lap/jp35.html">scope of variables1</a>
+            <a href="../lap/jp36.html">scope of variables2</a>
+            <a href="../lap/jp39.html">자바스크립트 전역함수</a>
+            <a href="../lap/jp40.html">함수 만들기</a>
+            <a href="../lap/jp44.html">사용자 정의 객체</a>
+            <a href="../lap/jp45.html">객체 리터럴을 사용한 객체 생성</a>
+            <a href="../lap/jp46.html">객체 속성 엑세스</a>
+            <a href="../lap/jp48.html">함수와 객체</a>
+            <a href="../lap/jp49.html">함수 생성자, prototype</a>
+            <a href="../lap/jp50.html">객체 리터럴과 this</a>
+            <a href="../lap/jp52.html">[]로 배열 만들기</a>
+            <a href="../lap/jp53.html">Array 객체로 배열 만들기</a>
+            <a href="../lap/jp54.html">Array 메쏘드</a>
+            <a href="../lap/jp60.html">DOM 객체 다루기1</a>
+            <a href="../lap/jp61.html">DOM 객체 다루기2</a>
+            <a href="../lap/jp65.html">이벤트 처리</a>
+            <a href="../lap/jp68.html">lab</a>
+
+        </div>
+    </div>
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="">1</a></li>
+        <li class="page-item"><a class="page-link" href="">2</a></li>
+        <li class="page-item"><a class="page-link" href="">3</a></li>
+        <li class="page-item"><a class="page-link" href="">next</a></li>
+    </ul>
+</section>
+
 <footer>
 </footer>
 
