@@ -75,3 +75,8 @@ section{
     min-height: 100%;
     position: relative;
 }
+
+#insta{
+    text-decoration: none;
+    color: #5c636a;
+}
