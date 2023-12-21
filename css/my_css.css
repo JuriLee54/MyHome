@@ -1,5 +1,5 @@
 #card {
-    width: 100%;
+    width: 400px;
 }
 
 #juri {
@@ -11,11 +11,14 @@
 }
 
 #head{
-    height:400px;
+    height:300px;
 }
 
+h2{
+    font-weight: bold;
+}
 .interest{
-    width:100%;
+    width:70%;
 
 }
 
@@ -55,10 +58,16 @@
     color: black;
 }
 
-.table {
-    width: 100%;
+
+#form_div{
+    width: 70%;
 }
 
-#lap{
-    width: 100%;
+body {
+        display: flex;
+        flex-direction: column;
+}
+
+.footer{
+    margin-top: auto;
 }
