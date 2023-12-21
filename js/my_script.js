@@ -1,10 +1,3 @@
-function clickTable1(){
-    var t1 = document.getElementById("t1").innerHTML;
-    var a1 = document.getElementById("a1");
-    var lap = document.getElementById("lap");
-
-    lap.innerHTML = t1;
-}
 function tool() {
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')) ;
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

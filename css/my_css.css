@@ -15,8 +15,8 @@ h2{
 }
 
 .interest{
-    width:70%;
-
+    width:350px;
+    height: 250px;
 }
 
 
@@ -34,13 +34,9 @@ h2{
     width: 100%;
 }
 
-#works{
-    width: 70%;
-}
-
 .study{
     width:35px;
-    height: 35px;
+    height:35px;
 }
 
 .btn_lap {
@@ -57,7 +53,8 @@ h2{
 
 
 #form_div{
-    width: 70%;
+    min-width: 400px;
+    max-width: 500px;
 }
 
 html,body{
