@@ -33,3 +33,32 @@
     top: 0;
     width: 100%;
 }
+
+#works{
+    width: 70%;
+}
+
+.study{
+    width:35px;
+    height: 35px;
+}
+
+.btn_lap {
+    width: 200px;
+}
+
+.li_lap{
+    list-style-type: none;
+}
+
+.bl{
+    color: black;
+}
+
+.table {
+    width: 100%;
+}
+
+#lap{
+    width: 100%;
+}

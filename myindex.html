@@ -7,8 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <style> @import "../css/my_css.css"; </style>
+    <script src="../js/my_script.js"></script>
 </head>
-<body>
+<body onload="init()">
 <div data-include-path="../reports/menu.html" id="my_nav"></div>
 <script src="../js/get_tags.js"></script>
 
@@ -18,8 +19,11 @@
             <h1 class="display-5 mb-2" id="home">Welcome to Juri's Home</h1>
             <p class="text-secondary mb-4">저의 웹사이트에 오신 것을 환영합니다. 저에 대해 더 알고 싶으시다면 버튼을 눌러주세요!</p>
             <div class="mx-auto">
-                <a class="btn btn-outline-light" href="#about_me">Learn More</a>
+                <a class="btn btn-outline-light my-4" href="#about_me" data-bs-toggle="tooltip" title="Thank you!">Learn More</a>
             </div>
+            <script>
+                tool();
+            </script>
         </div>
     </div>
 </header>
@@ -32,10 +36,8 @@
                 <img class="card-img-top" src="images/card.jpg" id="juri">
                 <div class="card-body">
                     <h4 class="card-title">Juri Lee</h4>
-                    <p class="card-text mb-0 mt-3">2018년  양주고등학교 입학</p>
-                    <p class="card-text mb-0">2021년  양주고등학교 졸업</p>
                     <p class="card-text">2021년~ 동덕여자대학교 정보통계학과 재학</p>
-                    <a href="" class="btn btn-outline-primary">See profile</a>
+                    <a href="#my_works" class="btn btn-secondary">See profile</a>
                 </div>
             </div>
         </section>
@@ -78,7 +80,7 @@
         <div class="col-12 col-lg-4 col-md-6 mx-auto">
             <div class="fa">
                 <div data-include-path="../reports/carousel_trip.html"></div>
-                <p class="my-3">여행을 떠날 때의 설렘을 좋아해 자주 여행을 갑니다.</p>
+                <p class="my-3">여행을 떠날 때의 설렘을 좋아합니다.</p>
             </div>
         </div>
         <div class="col-12 col-lg-4 col-md-6 mx-auto">
@@ -90,100 +92,187 @@
     </div>
 </section>
 
-<section class="container">
-    <div>
-        <h2>과제</h2>
-        <a href="../reports/index.html">인덱스 페이지</a>
-        <a href="../reports/register.html">과제1</a>
-        <a href="../reports/register2.html">과제2</a>
-        <a href="../reports/report03.html">과제3</a>
-        <a href="../reports/report04.html">과제4</a>
+<section class="container mt-5" id="my_works">
+    <h2>My Works</h2>
+    <div class="row">
+         <div class='col-sm-4 mx-auto'>
+             <h4 id="my_reports" class="mt-4 mb-3">과제</h4>
+            <div class="row mb-4">
+                <div class="col-auto mx-auto"><a href="../reports/index.html" class="text-decoration-none px-3"><img src="../images/study.png" class="study">
+                    <span class="px-2">인덱스 페이지</span></a></div>
+                <div class="col-auto mx-auto"><a href="../reports/register.html" class="text-decoration-none"><img src="../images/study.png" class="study">
+                    <span class="px-2">과제1</span></a></div>
+                <div class="col-auto mx-auto"><a href="../reports/register2.html" class="text-decoration-none"><img src="../images/study.png" class="study">
+                    <span class="px-2">과제2</span></a></div>
+                <div class="col-auto mx-auto"><a href="../reports/report03.html" class="text-decoration-none"><img src="../images/study.png" class="study">
+                    <span class="px-2">과제3</span></a></div>
+                <div class="col-auto mx-auto"><a href="../reports/report04.html" class="text-decoration-none"><img src="../images/study.png" class="study">
+                    <span class="px-2">과제4</span></a></div>
+            </div>
+        </div>
+
+        <div class="col-sm-8 mx-auto">
+            <h4 id="my_lap" class="mt-4 mb-3">실습</h4>
+            <div id="lap">
+                <table class="table table-striped" id="t1">
+                    <thead class="table-dark">
+                    <tr> <th>No</th> <th>subject</th> <th>Lastname</th> </tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td>HTML</td><td><a href="../lap/hp04.html" class="text-decoration-none bl"> 한용운의 님의 침묵</a></td></tr>
+                        <tr><td>2</td><td>HTML</td><td><a href="../lap/hp08.html" class="text-decoration-none bl">div and span elements</a></td></tr>
+                        <tr><td>3</td><td>HTML</td><td><a href="../lap/hp15.html" class="text-decoration-none bl">시맨틱 태그 사용</a></td></tr>
+                        <tr><td>4</td><td>HTML</td><td><a href="../lap/hp16.html" class="text-decoration-none bl">제목 표현</a></td></tr>
+                        <tr><td>5</td><td>HTML</td><td><a href="../lap/hp19.html" class="text-decoration-none bl">웹 문서 구조화 연습</a></td></tr>
+                        <tr><td>6</td><td>HTML</td><td><a href="../lap/hp24.html" class="text-decoration-none bl">영역 분할</a></td></tr>
+                        <tr><td>7</td><td>HTML</td><td><a href="../lap/hp26.html" class="text-decoration-none bl">문자, 기호, 심볼 표현</a></td></tr>
+                        <tr><td>8</td><td>HTML</td><td><a href="../lap/hp28.html" class="text-decoration-none bl">이미지 삽입</a></td></tr>
+                        <tr><td>9</td><td>HTML</td><td><a href="../lap/hp30.html" class="text-decoration-none bl">목록 만들기</a></td></tr>
+                        <tr><td>10</td><td>HTML</td><td><a href="../lap/hp32.html" class="text-decoration-none bl">표 만들기 예</a></td></tr>
+                    </tbody>
+                </table>
+                <table class="table table-striped" id="t2">
+                <thead class="table-dark">
+                    <tr> <th>No</th> <th>subject</th> <th>Lastname</th> </tr></thead>
+                    <tbody>
+                        <tr><td>11</td><td>HTML</td><td><a href="../lap/hp36.html" class="text-decoration-none bl">하이퍼 링크</a></td></tr>
+                        <tr><td>12</td><td>HTML</td><td><a href="../lap/hp37.html" class="text-decoration-none bl">BTS</a></td></tr>
+                        <tr><td>13</td><td>HTML</td><td><a href="../lap/hp42.html" class="text-decoration-none bl">로그인</a></td></tr>
+                        <tr><td>14</td><td>HTML</td><td><a href="../lap/hp48.html" class="text-decoration-none bl">텍스트 입력 폼</a></td></tr>
+                        <tr><td>15</td><td>HTML</td><td><a href="../lap/hp53.html" class="text-decoration-none bl">사용자 정보 입력</a></td></tr>
+                        <tr><td>16</td><td>HTML</td><td><a href="../lap/hp57.html" class="text-decoration-none bl">버튼 만들기</a></td></tr>
+                        <tr><td>17</td><td>HTML</td><td><a href="../lap/hp61.html" class="text-decoration-none bl">선택형 항목 만들기</a>
+                        <tr><td>18</td><td>HTML</td><td><a href="../lap/hp67.html" class="text-decoration-none bl">피자 주문 예약</a></td></tr>
+                        <tr><td>19</td><td>CSS</td><td><a href="../lap/cp05.html" class="text-decoration-none bl">스타일 시트 활용</a></td></tr>
+                        <tr><td>20</td><td>CSS</td><td><a href="../lap/cp08.html" class="text-decoration-none bl">스타일 만들기</a></td></tr>
+                    </tbody>
+                </table>
+                <table class="table table-striped" id="t3">
+                    <thead class="table-dark">
+                    <tr> <th>No</th> <th>subject</th> <th>Lastname</th> </tr></thead>
+                    <tbody>
+                         <tr><td>21</td><td>CSS</td><td><a href="../lap/cp22.html" class="text-decoration-none bl">선택자</a></td></tr>
+                        <tr><td>22</td><td>CSS</td><td><a href="../lap/cp29.html" class="text-decoration-none bl">박스 모델 적용</a></td></tr>
+                        <tr><td>23</td><td>CSS</td><td><a href="../lap/cp34.html" class="text-decoration-none bl">피자 메뉴</a></td></tr>
+                        <tr><td>24</td><td>CSS</td><td><a href="../lap/cp38.html" class="text-decoration-none bl">메뉴 만들기</a></td></tr>
+                        <tr><td>25</td><td>CSS</td><td><a href="../lap/cp40.html" class="text-decoration-none bl">표 꾸미기</a></td></tr>
+                        <tr><td>26</td><td>CSS</td><td><a href="../lap/cp45.html" class="text-decoration-none bl">display 속성</a></td></tr>
+                        <tr><td>27</td><td>CSS</td><td><a href="../lap/cp47.html" class="text-decoration-none bl">광야-이육사</a></td></tr>
+                        <tr><td>28</td><td>CSS</td><td><a href="../lap/cp51.html" class="text-decoration-none bl">float 속성</a></td></tr>
+                        <tr><td>29</td><td>CSS</td><td><a href="../lap/cp54.html" class="text-decoration-none bl">Two Column Design</a></td></tr>
+                        <tr><td>30</td><td>CSS</td><td><a href="../lap/cp56.html" class="text-decoration-none bl">float 속성을 이용한 배치</a></td></tr>
+                    </tbody>
+                </table>
+                <table class="table table-striped" id="t4">
+                    <thead class="table-dark">
+                    <tr> <th>No</th> <th>subject</th> <th>Lastname</th> </tr></thead>
+                    <tbody>
+                        <tr><td>31</td><td>CSS</td><td><a href="../lap/cp58.html" class="text-decoration-none bl">다중 열 레이아웃</a></td></tr>
+                        <tr><td>32</td><td>CSS</td><td><a href="../lap/cp68.html" class="text-decoration-none bl">미디어 쿼리</a></td></tr>
+                        <tr><td>33</td><td>CSS</td><td><a href="../lap/cp71.html" class="text-decoration-none bl">반응형 웹 페이지</a></td></tr>
+                        <tr><td>34</td><td>Bootstrap</td><td><a href="../lap/bp07.html" class="text-decoration-none bl">Bs5 컨테이너 예제1</a></td></tr>
+                        <tr><td>35</td><td>Bootstrap</td><td><a href="../lap/bp11.html" class="text-decoration-none bl">Bs5 컨테이너 예제2</a></td></tr>
+                        <tr><td>36</td><td>Bootstrap</td><td><a href="../lap/bp14.html" class="text-decoration-none bl">BS5 Typography</a></td></tr>
+                        <tr><td>37</td><td>Bootstrap</td><td><a href="../lap/bp17.html" class="text-decoration-none bl">BS5 Color</a></td></tr>
+                        <tr><td>38</td><td>Bootstrap</td><td><a href="../lap/bp19.html" class="text-decoration-none bl">BS5 table</a></td></tr>
+                        <tr><td>39</td><td>Bootstrap</td><td><a href="../lap/bp23.html" class="text-decoration-none bl">BS5 Button</a></td></tr>
+                        <tr><td>40</td><td>Bootstrap</td><td><a href="../lap/bp27.html" class="text-decoration-none bl">BS5 Cards</a></td></tr>
+                    </tbody>
+                </table>
+                <table class="table table-striped" id="t5">
+                    <thead class="table-dark">
+                    <tr> <th>No</th> <th>subject</th> <th>Lastname</th> </tr></thead>
+                    <tbody>
+                        <tr><td>41</td><td>Bootstrap</td><td><a href="../lap/bp30.html" class="text-decoration-none bl">BS5 Dropdown</a></td></tr>
+                        <tr><td>42</td><td>Bootstrap</td><td><a href="../lap/bp34.html" class="text-decoration-none bl">BS5 navbar</a></td></tr>
+                        <tr><td>43</td><td>Bootstrap</td><td><a href="../lap/bp36.html" class="text-decoration-none bl">BS5 navbar 적용</a></td></tr>
+                        <tr><td>44</td><td>Bootstrap</td><td><a href="../lap/bp39.html" class="text-decoration-none bl">BS5 Carousel</a></td></tr>
+                        <tr><td>45</td><td>Bootstrap</td><td><a href="../lap/bp41.html" class="text-decoration-none bl">BS5 carousel 적용</a></td></tr>
+                        <tr><td>46</td><td>Bootstrap</td><td><a href="../lap/bp44.html" class="text-decoration-none bl">Bs5 Tooltip Example</a></td></tr>
+                        <tr><td>47</td><td>Bootstrap</td><td><a href="../lap/bp46.html" class="text-decoration-none bl">BS5 Flex</a></td></tr>
+                        <tr><td>48</td><td>Bootstrap</td><td><a href="../lap/bp48.html" class="text-decoration-none bl">BS5 form</a></td></tr>
+                        <tr><td>49</td><td>Bootstrap</td><td><a href="../lap/bp50.html" class="text-decoration-none bl">BS5 form validated</a></td></tr>
+                        <tr><td>50</td><td>Bootstrap</td><td><a href="../lap/bp52.html" class="text-decoration-none bl">Bs5 Website Example</a></td></tr>
+                    </tbody>
+                </table>
+                 <table class="table table-striped" id="t6">
+                       <thead class="table-dark">
+                       <tr> <th>No</th> <th>subject</th> <th>Lastname</th> </tr></thead>
+                       <tbody>
+                          <tr><td>51</td><td>Java Script</td><td><a href="../lap/jp11.html" class="text-decoration-none bl">지역변수와 전역변수</a></td></tr>
+                          <tr><td>52</td><td>Java Script</td><td><a href="../lap/jp19.html" class="text-decoration-none bl">if-else</a></td></tr>
+                          <tr><td>53</td><td>Java Script</td><td><a href="../lap/jp20.html" class="text-decoration-none bl">if조건문 예제</a></td></tr>
+                          <tr><td>54</td><td>Java Script</td><td><a href="../lap/jp25.html" class="text-decoration-none bl">switch</a></td></tr>
+                          <tr><td>55</td><td>Java Script</td><td><a href="../lap/jp27.html" class="text-decoration-none bl">for문</a></td></tr>
+                          <tr><td>56</td><td>Java Script</td><td><a href="../lap/jp28.html" class="text-decoration-none bl">while 문</a></td></tr>
+                          <tr><td>57</td><td>Java Script</td><td><a href="../lap/jp29.html" class="text-decoration-none bl">do-while문</a></td></tr>
+                          <tr><td>58</td><td>Java Script</td><td><a href="../lap/jp31.html" class="text-decoration-none bl">break 문</a></td></tr>
+                          <tr><td>59</td><td>Java Script</td><td><a href="../lap/jp32.html" class="text-decoration-none bl">continue 문</a></td></tr>
+                          <tr><td>60</td><td>Java Script</td><td><a href="../lap/jp34.html" class="text-decoration-none bl">함수</a></td></tr>
+                       </tbody>
+                 </table>
+                <table class="table table-striped" id="t7">
+                      <thead class="table-dark">
+                      <tr> <th>No</th> <th>subject</th> <th>Lastname</th> </tr></thead>
+                      <tbody>
+                        <tr><td>61</td><td>Java Script</td><td><a href="../lap/jp35.html" class="text-decoration-none bl">scope of variables1</a></td></tr>
+                        <tr><td>62</td><td>Java Script</td><td><a href="../lap/jp36.html" class="text-decoration-none bl">scope of variables2</a></td></tr>
+                        <tr><td>63</td><td>Java Script</td><td><a href="../lap/jp39.html" class="text-decoration-none bl">자바스크립트 전역함수</a></td></tr>
+                        <tr><td>64</td><td>Java Script</td><td><a href="../lap/jp40.html" class="text-decoration-none bl">함수 만들기</a></td></tr>
+                        <tr><td>65</td><td>Java Script</td><td><a href="../lap/jp44.html" class="text-decoration-none bl">사용자 정의 객체</a></td></tr>
+                        <tr><td>66</td><td>Java Script</td><td><a href="../lap/jp45.html" class="text-decoration-none bl">객체 리터럴을 사용한 객체 생성</a></td></tr>
+                        <tr><td>67</td><td>Java Script</td><td><a href="../lap/jp46.html" class="text-decoration-none bl">객체 속성 엑세스</a></td></tr>
+                        <tr><td>68</td><td>Java Script</td><td><a href="../lap/jp48.html" class="text-decoration-none bl">함수와 객체</a></td></tr>
+                        <tr><td>69</td><td>Java Script</td><td><a href="../lap/jp49.html" class="text-decoration-none bl">함수 생성자, prototype</a></td></tr>
+                        <tr><td>70</td><td>Java Script</td><td><a href="../lap/jp50.html" class="text-decoration-none bl">객체 리터럴과 this</a></td></tr>
+                      </tbody>
+                </table>
+                <table class="table table-striped" id="t8">
+                    <thead class="table-dark">
+                    <tr> <th>No</th> <th>subject</th> <th>Lastname</th> </tr></thead>
+                    <tbody>
+                        <tr><td>71</td><td>Java Script</td><td><a href="../lap/jp52.html" class="text-decoration-none bl">[]로 배열 만들기</a></td></tr>
+                        <tr><td>72</td><td>Java Script</td><td><a href="../lap/jp53.html" class="text-decoration-none bl">Array 객체로 배열 만들기</a></td></tr>
+                        <tr><td>73</td><td>Java Script</td><td><a href="../lap/jp54.html" class="text-decoration-none bl">Array 메쏘드</a></td></tr>
+                        <tr><td>74</td><td>Java Script</td><td><a href="../lap/jp60.html" class="text-decoration-none bl">DOM 객체 다루기1</a></td></tr>
+                        <tr><td>75</td><td>Java Script</td><td><a href="../lap/jp61.html" class="text-decoration-none bl">DOM 객체 다루기2</a></td></tr>
+                        <tr><td>76</td><td>Java Script</td><td><a href="../lap/jp65.html" class="text-decoration-none bl">이벤트 처리</a></td></tr>
+                        <tr><td>77</td><td>Java Script</td><td><a href="../lap/jp68.html" class="text-decoration-none bl">lab</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="pagination">
+                <li class="page-item "><a class="page-link" href="#lap" id="pre">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#lap"  id="a1">1</a></li>
+                <li class="page-item"><a class="page-link" href="#lap" id="a2">2</a></li>
+                <li class="page-item"><a class="page-link" href="#lap" id="a3">3</a></li>
+                <li class="page-item"><a class="page-link" href="#lap" id="a4">4</a></li>
+                <li class="page-item"><a class="page-link" href="#lap" id="a5">5</a></li>
+                <li class="page-item"><a class="page-link" href="#lap" id="a6">6</a></li>
+                <li class="page-item"><a class="page-link" href="#lap" id="a7">7</a></li>
+                <li class="page-item"><a class="page-link" href="#lap" id="a8">8</a></li>
+                <li class="page-item"><a class="page-link" href="#lap" id="next">next</a></li>
+            </ul>
+        </div>
     </div>
-
-    <div>
-        <h2>실습</h2>
-        <div>
-
-        </div>
-        <div>
-            <h4>css실습</h4>
-            <a href="../lap/cp05.html">스타일 시트 활용</a>
-            <a href="../lap/cp08.html">스타일 만들기</a>
-            <a href="../lap/cp22.html">선택자</a>
-            <a href="../lap/cp29.html">박스 모델 적용</a>
-            <a href="../lap/cp34.html">피자 메뉴</a>
-            <a href="../lap/cp38.html">메뉴 만들기</a>
-            <a href="../lap/cp40.html">표 꾸미기</a>
-            <a href="../lap/cp45.html">display 속성</a>
-            <a href="../lap/cp47.html">광야-이육사</a>
-            <a href="../lap/cp51.html">float 속성</a>
-            <a href="../lap/cp54.html">Two Column Design</a>
-            <a href="../lap/cp56.html">float 속성을 이용한 배치</a>
-            <a href="../lap/cp58.html">다중 열 레이아웃</a>
-            <a href="../lap/cp68.html">미디어 쿼리</a>
-            <a href="../lap/cp71.html">반응형 웹 페이지</a>
-        </div>
-        <div>
-            <h4>Bootstrap 실습</h4>
-            <a href="../lap/bp07.html">Bs5 컨테이너 예제1</a>
-            <a href="../lap/bp11.html">Bs5 컨테이너 예제2</a>
-            <a href="../lap/bp14.html">BS5 Typography</a>
-            <a href="../lap/bp17.html">BS5 Color</a>
-            <a href="../lap/bp19.html">BS5 table</a>
-            <a href="../lap/bp23.html">BS5 Button</a>
-            <a href="../lap/bp27.html">BS5 Cards</a>
-            <a href="../lap/bp30.html">BS5 Dropdown</a>
-            <a href="../lap/bp34.html">BS5 navbar</a>
-            <a href="../lap/bp36.html">BS5 navbar 적용</a>
-            <a href="../lap/bp39.html">BS5 Carousel</a>
-            <a href="../lap/bp41.html">BS5 carousel 적용</a>
-            <a href="../lap/bp44.html">Bs5 Tooltip Example</a>
-            <a href="../lap/bp46.html">BS5 Flex</a>
-            <a href="../lap/bp48.html">BS5 form</a>
-            <a href="../lap/bp50.html">BS5 form validated</a>
-            <a href="../lap/bp52.html">Bs5 Website Example</a>
-        </div>
-        <div>
-            <h2>JavaScript 실습</h2>
-            <a href="../lap/jp11.html">지역변수와 전역변수</a>
-            <a href="../lap/jp19.html">if-else</a>
-            <a href="../lap/jp20.html">if조건문 예제</a>
-            <a href="../lap/jp25.html">switch</a>
-            <a href="../lap/jp27.html">for문</a>
-            <a href="../lap/jp28.html">while 문</a>
-            <a href="../lap/jp29.html">do-while문</a>
-            <a href="../lap/jp31.html">break 문</a>
-            <a href="../lap/jp32.html">continue 문</a>
-            <a href="../lap/jp34.html">함수</a>
-            <a href="../lap/jp35.html">scope of variables1</a>
-            <a href="../lap/jp36.html">scope of variables2</a>
-            <a href="../lap/jp39.html">자바스크립트 전역함수</a>
-            <a href="../lap/jp40.html">함수 만들기</a>
-            <a href="../lap/jp44.html">사용자 정의 객체</a>
-            <a href="../lap/jp45.html">객체 리터럴을 사용한 객체 생성</a>
-            <a href="../lap/jp46.html">객체 속성 엑세스</a>
-            <a href="../lap/jp48.html">함수와 객체</a>
-            <a href="../lap/jp49.html">함수 생성자, prototype</a>
-            <a href="../lap/jp50.html">객체 리터럴과 this</a>
-            <a href="../lap/jp52.html">[]로 배열 만들기</a>
-            <a href="../lap/jp53.html">Array 객체로 배열 만들기</a>
-            <a href="../lap/jp54.html">Array 메쏘드</a>
-            <a href="../lap/jp60.html">DOM 객체 다루기1</a>
-            <a href="../lap/jp61.html">DOM 객체 다루기2</a>
-            <a href="../lap/jp65.html">이벤트 처리</a>
-            <a href="../lap/jp68.html">lab</a>
-
-        </div>
-    </div>
-    <ul class="pagination justify-content-center">
-        <li class="page-item"><a class="page-link" href="">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="">1</a></li>
-        <li class="page-item"><a class="page-link" href="">2</a></li>
-        <li class="page-item"><a class="page-link" href="">3</a></li>
-        <li class="page-item"><a class="page-link" href="">next</a></li>
-    </ul>
 </section>
 
+<section  class="container mt-5" id="contact_me">
+    <form action="…">
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label">이름</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">이메일</label>
+            <input type="email" class="form-control" placeholder="Enter password" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="comment" class="form-label">Comments</label>
+            <textarea rows="5" class="form-control" id="comment" name="text"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+    </form>
+</section>
 <footer>
 </footer>
 
